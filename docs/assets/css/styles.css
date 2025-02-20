@@ -488,45 +488,36 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-/* Booking Form */
+/* Booking Section */
 .booking {
     padding: 5rem 0;
+    text-align: center;
 }
 
-.booking-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 3rem;
-    border-radius: 10px;
+.facebook-booking-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: #1877f2;
+    color: var(--light-text);
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
+.facebook-booking-btn i {
+    font-size: 1.4rem;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
-    font-weight: 500;
-}
-
-.form-group input,
-.form-group select {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group select:focus {
-    outline: none;
-    border-color: var(--primary-color);
+.facebook-booking-btn:hover {
+    background-color: #1664d9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
 }
 
 /* Images */
@@ -625,9 +616,15 @@ footer {
 
 .service-detail-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
     align-items: start;
+}
+
+@media (min-width: 1024px) {
+    .service-detail-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+    }
 }
 
 .service-detail-content {

@@ -150,14 +150,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     images.forEach(img => imageObserver.observe(img));
-
-    // Form validation for booking
-    const bookingForm = document.querySelector('.booking-form');
-    if (bookingForm) {
-        bookingForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Add your form submission logic here
-            alert('Cảm ơn bạn đã đặt lịch! Chúng tôi sẽ liên hệ với bạn sớm nhất.');
-        });
-    }
 }); 

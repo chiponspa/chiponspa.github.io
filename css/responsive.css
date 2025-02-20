@@ -1,0 +1,167 @@
+/* Mobile First Responsive Design */
+
+/* Small devices (phones, up to 576px) */
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .promo-image,
+    .service-image {
+        height: 180px;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+}
+
+/* Medium devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: var(--text-color);
+        margin: 5px 0;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background-light);
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map {
+        height: 250px;
+    }
+
+    .promo-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content h2 {
+        text-align: center;
+    }
+
+    .feature {
+        justify-content: center;
+    }
+}
+
+/* Large devices (desktops, up to 992px) */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
+    }
+
+    .about-grid {
+        gap: 2rem;
+    }
+}
+
+/* Extra large devices (large desktops, up to 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Animation Classes */
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) {
+    .promo-card:hover,
+    .service-card:hover {
+        transform: none;
+    }
+
+    .cta-button:hover,
+    .button:hover {
+        transform: none;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .main-nav,
+    .hero,
+    .cta-button,
+    .button,
+    .social-links {
+        display: none;
+    }
+
+    body {
+        color: #000;
+        background: #fff;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+} 

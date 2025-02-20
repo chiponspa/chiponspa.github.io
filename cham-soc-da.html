@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chăm Sóc Da - Chipon Spa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Chipon Spa</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="services.html">Dịch Vụ</a></li>
+                <li><a href="#booking">Đặt Lịch</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Service Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Chăm Sóc Da</h1>
+            <p>Điều trị mụn và chăm sóc da chuyên sâu</p>
+        </div>
+    </header>
+
+    <!-- Service Detail -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-content">
+                    <h2>Dịch Vụ Chăm Sóc Da</h2>
+                    <div class="service-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Thời gian: 60-90 phút</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-tag"></i>
+                            <span>Giá: 200K - 500K</span>
+                        </div>
+                    </div>
+                    <div class="service-description">
+                        <h3>Các Dịch Vụ Chăm Sóc Da</h3>
+                        <ul class="service-list">
+                            <li>
+                                <h4>Điều Trị Mụn Cơ Bản</h4>
+                                <p>Làm sạch sâu và điều trị mụn nhẹ</p>
+                                <span class="price">200K (60 phút)</span>
+                            </li>
+                            <li>
+                                <h4>Điều Trị Mụn Chuyên Sâu</h4>
+                                <p>Điều trị mụn và sẹo chuyên sâu</p>
+                                <span class="price">300K (90 phút)</span>
+                            </li>
+                            <li>
+                                <h4>Chăm Sóc Da Cơ Bản</h4>
+                                <p>Làm sạch và dưỡng ẩm da</p>
+                                <span class="price">250K (60 phút)</span>
+                            </li>
+                            <li>
+                                <h4>Chăm Sóc Da Cao Cấp</h4>
+                                <p>Chăm sóc da toàn diện với mặt nạ cao cấp</p>
+                                <span class="price">500K (90 phút)</span>
+                            </li>
+                        </ul>
+
+                        <h3>Quy Trình Thực Hiện</h3>
+                        <ol>
+                            <li>Tư vấn và phân tích da</li>
+                            <li>Tẩy trang và làm sạch</li>
+                            <li>Tẩy da chết nhẹ nhàng</li>
+                            <li>Xông hơi mở lỗ chân lông</li>
+                            <li>Điều trị theo tình trạng da</li>
+                            <li>Đắp mặt nạ dưỡng chất</li>
+                            <li>Massage và dưỡng ẩm</li>
+                        </ol>
+
+                        <h3>Lợi Ích</h3>
+                        <ul>
+                            <li>Làm sạch sâu và se khít lỗ chân lông</li>
+                            <li>Giảm mụn và ngăn ngừa mụn</li>
+                            <li>Cải thiện kết cấu da</li>
+                            <li>Dưỡng ẩm và làm mềm da</li>
+                            <li>Giảm thâm và sẹo mụn</li>
+                        </ul>
+
+                        <h3>Lưu Ý</h3>
+                        <ul>
+                            <li>Không trang điểm khi đến spa</li>
+                            <li>Thông báo tình trạng dị ứng (nếu có)</li>
+                            <li>Tránh ánh nắng trực tiếp sau điều trị</li>
+                            <li>Duy trì chế độ chăm sóc da tại nhà</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-detail-images">
+                    <img src="assets/images/skincare-service.jpg" alt="Chăm sóc da" class="main-image">
+                    <div class="image-grid">
+                        <img src="assets/images/skincare-treatment.jpg" alt="Điều trị da" loading="lazy">
+                        <img src="assets/images/spa-interior.jpg" alt="Không gian spa" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <h2>Đặt Lịch Dịch Vụ</h2>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="name">Họ và Tên</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số Điện Thoại</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service-type">Loại Dịch Vụ</label>
+                    <select id="service-type" name="service-type" required>
+                        <option value="dieu-tri-mun-co-ban">Điều Trị Mụn Cơ Bản (200K)</option>
+                        <option value="dieu-tri-mun-chuyen-sau">Điều Trị Mụn Chuyên Sâu (300K)</option>
+                        <option value="cham-soc-da-co-ban">Chăm Sóc Da Cơ Bản (250K)</option>
+                        <option value="cham-soc-da-cao-cap">Chăm Sóc Da Cao Cấp (500K)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Ngày Hẹn</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Giờ Hẹn</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <button type="submit" class="button">Xác Nhận Đặt Lịch</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="related-services">
+        <div class="container">
+            <h2>Dịch Vụ Liên Quan</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <a href="massage.html" class="service-link">
+                        <img src="assets/images/massage-service.jpg" alt="Massage trị liệu" class="service-image" loading="lazy">
+                        <h3>Massage Trị Liệu</h3>
+                        <p>Massage cổ vai gáy và toàn thân chuyên sâu</p>
+                        <span class="view-more">Xem Chi Tiết</span>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="nails.html" class="service-link">
+                        <img src="assets/images/nails-service.jpg" alt="Dịch vụ nails" class="service-image" loading="lazy">
+                        <h3>Dịch Vụ Nails</h3>
+                        <p>Chăm sóc và làm đẹp móng chuyên nghiệp</p>
+                        <span class="view-more">Xem Chi Tiết</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Giờ Mở Cửa</h3>
+                    <p>Thứ Hai - Thứ Sáu: 9:00 - 20:00</p>
+                    <p>Thứ Bảy: 9:00 - 18:00</p>
+                    <p>Chủ Nhật: Đóng Cửa</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên Hệ</h3>
+                    <p>Điện thoại: (123) 456-7890</p>
+                    <p>Email: info@chiponspa.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo Dõi</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chipon Spa. Đã đăng ký bản quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

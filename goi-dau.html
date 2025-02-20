@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gội Đầu Dưỡng Sinh - Chipon Spa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Chipon Spa</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="services.html">Dịch Vụ</a></li>
+                <li><a href="#booking">Đặt Lịch</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Service Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Gội Đầu Dưỡng Sinh</h1>
+            <p>Trải nghiệm thư giãn tuyệt vời với dịch vụ gội đầu kết hợp massage</p>
+        </div>
+    </header>
+
+    <!-- Service Detail -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-content">
+                    <h2>Dịch Vụ Gội Đầu Dưỡng Sinh</h2>
+                    <div class="service-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Thời gian: 45-60 phút</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-tag"></i>
+                            <span>Giá: 150K - 200K</span>
+                        </div>
+                    </div>
+                    <div class="service-description">
+                        <h3>Mô Tả Dịch Vụ</h3>
+                        <p>Dịch vụ gội đầu dưỡng sinh tại Chipon Spa không chỉ đơn thuần là việc làm sạch tóc mà còn là một trải nghiệm thư giãn hoàn hảo. Chúng tôi sử dụng các loại tinh dầu thảo dược tự nhiên, kết hợp với kỹ thuật massage chuyên nghiệp để mang lại những lợi ích tuyệt vời cho sức khỏe của bạn.</p>
+                        
+                        <h3>Quy Trình Thực Hiện</h3>
+                        <ol>
+                            <li>Massage thư giãn vùng vai gáy</li>
+                            <li>Gội đầu với dầu gội thảo dược</li>
+                            <li>Massage da đầu với tinh dầu</li>
+                            <li>Ủ dưỡng tóc (tùy chọn)</li>
+                            <li>Xả sạch và dưỡng tóc</li>
+                            <li>Massage thư giãn kết thúc</li>
+                        </ol>
+
+                        <h3>Lợi Ích</h3>
+                        <ul>
+                            <li>Giảm căng thẳng, stress</li>
+                            <li>Cải thiện tuần hoàn máu</li>
+                            <li>Giảm đau đầu, mỏi vai gáy</li>
+                            <li>Nuôi dưỡng tóc và da đầu</li>
+                            <li>Giúp ngủ ngon hơn</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-detail-images">
+                    <img src="assets/images/hair-wash.jpg" alt="Gội đầu dưỡng sinh" class="main-image">
+                    <div class="image-grid">
+                        <img src="assets/images/nails-workspace.jpg" alt="Massage đầu" loading="lazy">
+                        <img src="assets/images/spa-interior.jpg" alt="Không gian spa" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <h2>Đặt Lịch Dịch Vụ</h2>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="name">Họ và Tên</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số Điện Thoại</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service-type">Loại Dịch Vụ</label>
+                    <select id="service-type" name="service-type" required>
+                        <option value="goi-dau-co-ban">Gội Đầu Massage (45 phút - 150K)</option>
+                        <option value="goi-dau-thao-duoc">Gội Đầu Thảo Dược (60 phút - 200K)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Ngày Hẹn</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Giờ Hẹn</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <button type="submit" class="button">Xác Nhận Đặt Lịch</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="related-services">
+        <div class="container">
+            <h2>Dịch Vụ Liên Quan</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <a href="massage.html" class="service-link">
+                        <img src="assets/images/massage-service.jpg" alt="Massage trị liệu" class="service-image" loading="lazy">
+                        <h3>Massage Trị Liệu</h3>
+                        <p>Massage cổ vai gáy và toàn thân chuyên sâu</p>
+                        <span class="view-more">Xem Chi Tiết</span>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="cham-soc-da.html" class="service-link">
+                        <img src="assets/images/skincare-service.jpg" alt="Chăm sóc da" class="service-image" loading="lazy">
+                        <h3>Chăm Sóc Da</h3>
+                        <p>Điều trị mụn và chăm sóc da chuyên sâu</p>
+                        <span class="view-more">Xem Chi Tiết</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Giờ Mở Cửa</h3>
+                    <p>Thứ Hai - Thứ Sáu: 9:00 - 20:00</p>
+                    <p>Thứ Bảy: 9:00 - 18:00</p>
+                    <p>Chủ Nhật: Đóng Cửa</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên Hệ</h3>
+                    <p>Điện thoại: (123) 456-7890</p>
+                    <p>Email: info@chiponspa.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo Dõi</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chipon Spa. Đã đăng ký bản quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -108,15 +108,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const marker = new google.maps.Marker({
                 position: spaLocation,
                 map: map,
-                title: 'Chipon Spa - 11 Đ. Số 4, khu phố 2, Thủ Đức'
+                title: 'Chipon Spa & Nails - Hẻm 92 QL13, khu phố 2, Thủ Đức'
             });
 
             // Add info window
             const infoWindow = new google.maps.InfoWindow({
                 content: `
                     <div style="padding: 10px;">
-                        <h3 style="margin: 0 0 5px 0; color: #6B4423;">Chipon Spa</h3>
-                        <p style="margin: 0; color: #333;">11 Đ. Số 4, khu phố 2<br>Thủ Đức, Hồ Chí Minh</p>
+                        <h3 style="margin: 0 0 5px 0; color: #6B4423;">Chipon Spa & Nails</h3>
+                        <p style="margin: 0; color: #333;">Hẻm 92 QL13, khu phố 2<br>Thủ Đức, Hồ Chí Minh</p>
                     </div>
                 `
             });

@@ -13,20 +13,6 @@ A modern, responsive website for Chip on Spa, featuring a clean design and intui
 - Contact information with map integration
 - Social media integration
 
-## Project Structure
-
-```
-chiponspa-website/
-├── index.html              # Homepage
-├── services.html           # Services page
-├── css/
-│   ├── styles.css         # Main styles
-│   └── responsive.css     # Responsive design styles
-├── js/
-│   └── main.js           # JavaScript functionality
-└── assets/               # Images and other media files
-```
-
 ## Setup Instructions
 
 1. Clone the repository:

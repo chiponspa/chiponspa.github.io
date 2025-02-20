@@ -1,6 +1,6 @@
-# Chip on Spa Website
+# Chipon Spa Website
 
-A modern, responsive website for Chip on Spa, featuring a clean design and intuitive user experience. The website is built using pure HTML, CSS, and JavaScript, making it lightweight and easy to maintain.
+A modern, responsive website for Chipon Spa & Nails, featuring a clean design and intuitive user experience. The website is built using pure HTML, CSS, and JavaScript, making it lightweight and easy to maintain.
 
 ## Features
 
@@ -17,12 +17,12 @@ A modern, responsive website for Chip on Spa, featuring a clean design and intui
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/chiponspa-website.git
+   git clone https://github.com/chiponspa/chiponspa.github.io.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd chiponspa-website
+   cd chiponspa.github.io
    ```
 
 3. Open `index.html` in your web browser to view the website.

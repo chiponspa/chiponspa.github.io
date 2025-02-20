@@ -33,31 +33,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Testimonials Slider
+    // Testimonials Display
     const testimonials = [
         {
-            name: "Nguyễn Thị Hương",
-            text: "Dịch vụ tuyệt vời! Nhân viên chuyên nghiệp và không gian rất thư giãn. Tôi đặc biệt thích dịch vụ gội đầu dưỡng sinh.",
+            name: "Linh Nguyễn",
+            text: "Mình hay gội đầu dưỡng sinh ở đây, nv rất dth nhiệt tình mà gội cũng rất thoải mái.",
             rating: 5
         },
         {
-            name: "Trần Văn Nam",
-            text: "Massage cổ vai gáy ở đây rất hiệu quả. Sau một tuần làm việc căng thẳng, đây là điều tôi cần nhất.",
+            name: "Kiều Tiên",
+            text: "Nhân viên nhiệt tình, dễ thương, giá phải chăng,.....",
             rating: 5
         },
         {
-            name: "Phạm Thu Hà",
-            text: "Dịch vụ chăm sóc da và điều trị mụn rất tốt. Da mặt của tôi đã cải thiện rõ rệt sau vài lần điều trị.",
+            name: "Thiep Tran (Local Guide)",
+            text: "Gội đầu sạch, mát xa dễ chịu và uốn mi siêu cong, ưng lắm. Giá mềm hơn so mặt bằng chung, nv nhiệt tình, bạn mình đợi mình uốn mi 1 tiếng thì được các bạn nv hỗ trợ ngâm chân free.",
+            rating: 5
+        },
+        {
+            name: "Phan Thư",
+            text: "Nhân viên nhiệt tình, dễ thương, spa thơm saạch đẹp, giá phải chăng, nhân viên masa dễ chiu, thư giản…. Sẽ ghé ủng hộ tiếp, rất hài lòng",
+            rating: 5
+        },
+        {
+            name: "Long Nguyen",
+            text: "Nhân viên dễ thương, giá cả cũng hợp lý. Mình hay nặn mụn ở đây thấy okela lắm nè",
             rating: 5
         }
     ];
 
-    const testimonialContainer = document.querySelector('.testimonials-slider');
-    let currentTestimonial = 0;
-
+    const testimonialContainer = document.querySelector('.testimonials-grid');
+    
     function createTestimonialElement(testimonial) {
         return `
-            <div class="testimonial-item" style="opacity: 0; transition: opacity 0.5s ease;">
+            <div class="testimonial-item">
                 <div class="rating">
                     ${'★'.repeat(testimonial.rating)}${'☆'.repeat(5-testimonial.rating)}
                 </div>
@@ -67,22 +76,11 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
 
-    function showTestimonial(index) {
-        testimonialContainer.innerHTML = createTestimonialElement(testimonials[index]);
-        setTimeout(() => {
-            testimonialContainer.querySelector('.testimonial-item').style.opacity = '1';
-        }, 50);
-    }
-
-    function nextTestimonial() {
-        currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-        showTestimonial(currentTestimonial);
-    }
-
-    // Initialize testimonials
+    // Display all testimonials
     if (testimonialContainer) {
-        showTestimonial(0);
-        setInterval(nextTestimonial, 5000);
+        testimonialContainer.innerHTML = testimonials.map(testimonial => 
+            createTestimonialElement(testimonial)
+        ).join('');
     }
 
     // Google Maps Integration

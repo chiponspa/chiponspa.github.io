@@ -43,6 +43,8 @@
     .service-item .service-item-image {
         flex: 0 1 40%;
         margin: 0;
+        width: 100px;
+        height: 100px;
     }
 
     .service-item .service-details {

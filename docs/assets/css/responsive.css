@@ -26,6 +26,45 @@
     .about-image img {
         height: 300px;
     }
+
+    .service-list {
+        grid-template-columns: 1fr;
+    }
+
+    .service-highlights {
+        flex-direction: column;
+    }
+
+    .service-item {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .service-item .service-item-image {
+        flex: 0 1 40%;
+        margin: 0;
+    }
+
+    .service-item .service-details {
+        flex: 0 1 55%;
+        margin: 0;
+    }
+
+    .service-item .price {
+        margin: 1rem auto 0 auto;
+    }
+
+    #education-service .service-item *:not(:last-child) {
+        flex-basis: 100%;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    #education-service .service-item a.button {
+        margin: 0 auto;
+    }
+
+    
 }
 
 /* Medium devices (tablets, up to 768px) */
@@ -63,10 +102,6 @@
 
     .contact-grid {
         grid-template-columns: 1fr;
-    }
-
-    .map {
-        height: 250px;
     }
 
     .promo-grid,

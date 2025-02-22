@@ -1,14 +1,14 @@
 /* Base Styles and Variables */
 :root {
-    --primary-color: #9D7E68;     /* Warm brown */
-    --secondary-color: #E8D3C3;   /* Light beige */
-    --accent-color: #6B4423;      /* Dark brown */
+    --primary-color: #de1f28;     /* Main red */
+    --secondary-color: #fff0f0;   /* Light pink background */
+    --accent-color: #b31820;      /* Darker red */
     --text-color: #333333;        /* Dark gray for text */
     --light-text: #FFFFFF;        /* White text */
-    --background-light: #FAF6F3;  /* Off-white background */
-    --background-dark: #2C1810;   /* Deep brown */
-    --success-color: #68A691;     /* Spa green */
-    --error-color: #D65F5F;       /* Soft red */
+    --background-light: #fefafa;  /* Off-white background */
+    --background-dark: #1a0305;   /* Deep red-black */
+    --success-color: #28a745;     /* Green for success */
+    --error-color: #dc3545;       /* Red for errors */
 }
 
 /* Reset and Base Styles */
@@ -54,6 +54,18 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
 
 .logo a {

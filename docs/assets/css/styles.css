@@ -45,6 +45,52 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     top: 0;
     z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* Transparent navigation for homepage */
+.transparent-nav {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.transparent-nav .logo a {
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.transparent-nav .logo img {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.transparent-nav .nav-links a {
+    color: var(--light-text);
+}
+
+.transparent-nav .nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+.transparent-nav.scrolled {
+    background-color: var(--background-light);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.transparent-nav.scrolled .logo img {
+    box-shadow: none;
+}
+
+.transparent-nav.scrolled .logo a {
+    text-shadow: none;
+}
+
+.transparent-nav.scrolled .nav-links a {
+    color: var(--text-color);
+}
+
+.transparent-nav.scrolled .nav-links a:hover {
+    color: var(--primary-color);
 }
 
 .nav-container {

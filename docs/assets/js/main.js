@@ -1,12 +1,50 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Check if we're on the homepage
+    const isHomepage = window.location.pathname === '/' || 
+                      window.location.pathname === '/index.html' ||
+                      window.location.pathname.endsWith('/docs/') ||
+                      window.location.pathname.endsWith('/docs/index.html');
+
+    const nav = document.querySelector('.main-nav');
+    
+    if (isHomepage) {
+        nav.classList.add('transparent-nav');
+        
+        // Handle scroll
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Check initial scroll position
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        }
+    }
+
     // Mobile Menu Toggle
     const menuToggle = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
 
-    menuToggle.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
+    if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            
+            // If menu is opened on homepage with transparent nav, add scrolled class for visibility
+            if (isHomepage && nav.classList.contains('transparent-nav')) {
+                nav.classList.add('scrolled');
+            } else if (isHomepage && !navLinks.classList.contains('active')) {
+                // Remove scrolled class when menu is closed and we're at the top
+                if (window.scrollY <= 50) {
+                    nav.classList.remove('scrolled');
+                }
+            }
+        });
+    }
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', function(event) {

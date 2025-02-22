@@ -83,59 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
         ).join('');
     }
 
-    // Google Maps Integration
-    function initMap() {
-        const mapElement = document.querySelector('.map');
-        if (mapElement && typeof google !== 'undefined') {
-            const spaLocation = { lat: 10.8501, lng: 106.7718 }; // Coordinates for Thu Duc address
-            const map = new google.maps.Map(mapElement, {
-                center: spaLocation,
-                zoom: 16,
-                styles: [
-                    {
-                        "featureType": "all",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#f5f5f5"}]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#e9e9e9"}]
-                    }
-                ]
-            });
-
-            const marker = new google.maps.Marker({
-                position: spaLocation,
-                map: map,
-                title: 'Chipon Spa & Nails - Hẻm 92 QL13, khu phố 2, Thủ Đức'
-            });
-
-            // Add info window
-            const infoWindow = new google.maps.InfoWindow({
-                content: `
-                    <div style="padding: 10px;">
-                        <h3 style="margin: 0 0 5px 0; color: #6B4423;">Chipon Spa & Nails</h3>
-                        <p style="margin: 0; color: #333;">Hẻm 92 QL13, khu phố 2<br>Thủ Đức, Hồ Chí Minh</p>
-                    </div>
-                `
-            });
-
-            marker.addListener('click', () => {
-                infoWindow.open(map, marker);
-            });
-        }
-    }
-
-    // Load Google Maps script
-    if (!window.google) {
-        const script = document.createElement('script');
-        script.src = `https://maps.googleapis.com/maps/api/js?key=&callback=initMap`;
-        script.async = true;
-        script.defer = true;
-        document.head.appendChild(script);
-    }
-
     // Lazy loading for images
     const images = document.querySelectorAll('img[data-src]');
     const imageObserver = new IntersectionObserver((entries, observer) => {

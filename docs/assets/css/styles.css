@@ -360,7 +360,7 @@ section h2 {
 }
 
 .map {
-    height: 300px;
+    height: 450px;
     background-color: #eee;
     border-radius: 10px;
 }
@@ -435,6 +435,41 @@ footer {
     margin: 0 auto;
     position: relative;
     z-index: 1;
+}
+
+.price-notice {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 2px solid var(--primary-color);
+    max-width: 800px;
+    width: 90%;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.facebook-link {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.facebook-link:hover {
+    background-color: #1877f2;
+    color: white;
+}
+
+.facebook-link i {
+    font-size: 1.1rem;
 }
 
 /* Service Categories */

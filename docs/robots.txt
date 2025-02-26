@@ -6,6 +6,7 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://chiponspa.github.io/sitemap.xml
+Allow: /sitemap.xml
 
 # Optimize crawling
 Crawl-delay: 1
@@ -26,8 +27,6 @@ Allow: /dao-tao.html
 
 # Disallow access to unnecessary files
 Disallow: /*.json$
-Disallow: /*.xml$
-Disallow: /*.txt$
 
 # Prevent duplicate content
 Disallow: /*?*

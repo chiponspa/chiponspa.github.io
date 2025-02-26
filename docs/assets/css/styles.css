@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                url('../images/chiponspa.jpg') center/cover no-repeat;
+                url('../images/chiponspa-small.jpg') center/cover no-repeat;
     background-position: 100% 60%;
     display: flex;
     align-items: center;

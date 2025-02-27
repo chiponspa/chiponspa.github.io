@@ -52,4 +52,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <!-- Blog Posts -->
+    <url>
+        <loc>https://chiponspa.github.io/blog/2025-02-28-review-goi-dau-thu-duc.html</loc>
+        <lastmod>2024-02-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset> 

@@ -91,16 +91,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        .blog-video {
-            width: 100%;
-            max-height: 65vh;
-            width: auto;
-            border-radius: 8px;
-            margin: 20px auto;
-            display: block;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
         .spa-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -121,6 +111,21 @@
             transform: scale(1.02);
         }
 
+        .blog-tiktok-video {
+            position: relative;
+            width: 323px; /* Adjust width as needed */
+            max-width: 360px; /* Optional: Limit maximum width */
+            aspect-ratio: 9 / 16; /* Maintains 9:16 ratio */
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .blog-tiktok-video blockquote {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         @media (max-width: 768px) {
             .spa-gallery {
                 grid-template-columns: 1fr;
@@ -128,12 +133,6 @@
             
             .spa-gallery img {
                 height: 250px;
-            }
-        }
-
-        @media (max-width: 850px) {
-            .blog-video {
-                max-width: 100%;
             }
         }
     </style>
@@ -209,10 +208,13 @@
                 </div>
             </div>
 
-            <video controls autoplay muted loop class="blog-video" style="max-height: 450px;">
-                <source src="../assets/videos/chiponspa-8-3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="blog-tiktok-video">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@chiponspa" data-video-id="7478695422354099463" data-loop="true" data-autoplay="true" data-no-recommend="true">
+                    <section>
+                        <a target="_blank" href="https://www.tiktok.com/@chiponspa">@chiponspa</a>
+                    </section>
+                </blockquote>
+            </div>
 
             <h2>Các Dịch Vụ Áp Dụng Khuyến Mãi</h2>
             <ul>
@@ -284,5 +286,7 @@
     </footer>
 
     <script src="../assets/js/main.js"></script>
+    <!-- TikTok Embed Script -->
+    <script async src="https://www.tiktok.com/embed.js"></script>
 </body>
 </html> 

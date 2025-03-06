@@ -45,6 +45,13 @@
         <priority>0.8</priority>
     </url>
 
+    <url>
+        <loc>https://chiponspa.github.io/uon-mi.html</loc>
+        <lastmod>2025-03-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- Training Page -->
     <url>
         <loc>https://chiponspa.github.io/dao-tao.html</loc>

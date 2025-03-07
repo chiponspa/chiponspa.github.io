@@ -10,7 +10,7 @@
 
     <!-- Main Service Pages -->
     <url>
-        <loc>https://chiponspa.github.io/dich-vu.html</loc>
+        <loc>https://chiponspa.github.io/dich-vu</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -18,35 +18,35 @@
 
     <!-- Individual Service Pages -->
     <url>
-        <loc>https://chiponspa.github.io/cham-soc-da.html</loc>
+        <loc>https://chiponspa.github.io/cham-soc-da</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://chiponspa.github.io/goi-dau.html</loc>
+        <loc>https://chiponspa.github.io/goi-dau</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://chiponspa.github.io/massage.html</loc>
+        <loc>https://chiponspa.github.io/massage</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://chiponspa.github.io/nails.html</loc>
+        <loc>https://chiponspa.github.io/nails</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://chiponspa.github.io/uon-mi.html</loc>
+        <loc>https://chiponspa.github.io/uon-mi</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -54,7 +54,7 @@
 
     <!-- Training Page -->
     <url>
-        <loc>https://chiponspa.github.io/dao-tao.html</loc>
+        <loc>https://chiponspa.github.io/dao-tao</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -62,21 +62,21 @@
 
     <!-- Blog Posts -->
     <url>
-        <loc>https://chiponspa.github.io/blog/2025-03-06-uu-dai-thu-4-chipon-spa.html</loc>
+        <loc>https://chiponspa.github.io/blog/2025-03-06-uu-dai-thu-4-chipon-spa</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://chiponspa.github.io/blog/2025-03-01-khuyen-mai-8-3-chipon-spa.html</loc>
+        <loc>https://chiponspa.github.io/blog/2025-03-01-khuyen-mai-8-3-chipon-spa</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://chiponspa.github.io/blog/2025-02-28-review-goi-dau-thu-duc.html</loc>
+        <loc>https://chiponspa.github.io/blog/2025-02-28-review-goi-dau-thu-duc</loc>
         <lastmod>2025-03-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>

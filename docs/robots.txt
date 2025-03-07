@@ -18,12 +18,12 @@ Allow: /css/
 Allow: /js/
 
 # Allow access to all service pages
-Allow: /dich-vu.html
-Allow: /cham-soc-da.html
-Allow: /goi-dau.html
-Allow: /massage.html
-Allow: /nails.html
-Allow: /dao-tao.html
+Allow: /dich-vu
+Allow: /cham-soc-da
+Allow: /goi-dau
+Allow: /massage
+Allow: /nails
+Allow: /dao-tao
 
 # Disallow access to unnecessary files
 Disallow: /*.json$

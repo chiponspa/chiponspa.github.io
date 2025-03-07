@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Check if we're on the homepage
     const isHomepage = window.location.pathname === '/' || 
-                      window.location.pathname === '/index.html' ||
-                      window.location.pathname.endsWith('/docs/') ||
-                      window.location.pathname.endsWith('/docs/index.html');
+                      window.location.pathname === '/index.html';
 
     const nav = document.querySelector('.main-nav');
     

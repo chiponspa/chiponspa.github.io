@@ -983,7 +983,6 @@ footer {
     margin-bottom: 3rem;
     max-width: 1200px;
     margin: 0 auto 3rem;
-    padding: 0 1rem;
 }
 
 .tiktok-video {
@@ -996,6 +995,7 @@ footer {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 0 auto;
 }
 
 .tiktok-video blockquote {
@@ -1059,6 +1059,12 @@ footer {
     .tiktok-grid {
         grid-template-columns: 1fr;
         max-width: 350px;
+    }
+}
+
+@media (max-width: 350px) {
+    .tiktok-video {
+        width: 315px;
     }
 }
 

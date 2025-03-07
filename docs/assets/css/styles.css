@@ -109,14 +109,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-logo {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
 }
 
 .logo a {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 700;
@@ -988,8 +988,10 @@ footer {
 
 .tiktok-video {
     position: relative;
-    width: 100%;
-    padding-top: 177.77%; /* Maintain 9:16 aspect ratio */
+    /* width: 100%; */
+    width: 323px; /* Adjust width as needed */
+    max-width: 360px; /* Optional: Limit maximum width */
+    aspect-ratio: 9 / 16; /* Maintains 9:16 ratio */
     background: white;
     border-radius: 15px;
     overflow: hidden;
